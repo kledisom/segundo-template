@@ -1,0 +1,175 @@
+	* {
+	  margin: 0px;
+	  padding: 0px;
+	}
+	 
+    body {
+	 font-family: 'Quicksand', sans-serif;
+	}
+	 
+	main {
+	  display: flex;
+	  flex-direction: column;
+	  /*justify-content: center;
+	  align-items: center;*/
+	  
+	  height: 400vh;
+	  width: 100%;
+	}
+	 
+	#s-intro {
+		 height: 80vh;
+	     width: 100%;
+		 
+		 background-image: url(../img//bg/highways.png);
+		
+	}
+	#s-intro header {
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		 gap: 100px;
+		 padding: 20px;
+		 
+		 background-color: #161616;
+		 color: #fff;	 
+	}
+    #s-intro header nav {
+		 display: flex;
+		 justify-content: space-between;
+		 align-items: center;
+		// gap: 10px; 
+		
+		width: 50%;
+	}
+	 
+    .intro-content {
+		 display: flex;
+		 flex-direction: column;
+		 justify-content: flex-end;
+		 align-items: center;
+		 height: 55vh;
+	     width: 100%;
+		 
+		 font-size: 1.2rem;
+		 color: #fff;
+		 line-height: 40px;
+		 letter-spacing: .04em;
+	}
+	.intro-content p {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.intro-content input {
+	 height: 50px;
+	 width: 150px;
+	 font-size: 1rem;
+	 color: #fff;
+	 background-color: #6772e5;
+	 border: none;
+	 border-radius: 10px;
+    }
+	
+	/*-----------------------------------------------*/
+	
+	.s-second {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+		
+	 height: 145vh;
+	 width: 100%;
+	}
+	.s-second h1 {
+	margin-top: 80px;
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #32325d;
+	}
+	.s-second h3 {
+		color: #212529;
+	}
+	/* .s-second div { */
+		/* border: 2px solid red; */
+		/* height: 50%; */
+	    /* width: 100%; */
+	/* } */
+	.s-second .card {
+	 //display: flex;
+	 //flex-direction: column;
+		
+	 //border: 2px solid lime;
+	 /* height: 40%; */
+	 /* width: 20%; */
+	}
+	.s-second .card h2 {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 height: auto;
+	 width: 100%;
+	 color: #32325d;
+	}
+   
+	.s-second .card h2::after {
+	 display: block;
+	 content: " ";
+	 background-color: #fff;
+	 height: 1px;
+	 width: 90%;
+	}
+	
+	.s-second .card h3 {
+	 text-align: center;
+	 color: #212529;
+	}
+	
+	.grid-container {
+		display: grid;
+		justify-content: space-around;
+		grid-template-columns: 400px 400px 400px;
+		gap: 20px;
+		//background-color: #2196F3;
+		//border: 2px solid gold;
+		//padding: 10px;
+		font-size: 0.9rem;
+		line-height: 30px;
+	}
+	/*--------seção 3--------------*/
+	
+	.s-third {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+		
+	 height: 50vh;
+	 width: 100%;
+	 background-color: gray;
+	}
+	
+	 
+	 
+	@media screen and (max-width: 900px) {
+	  
+	  main {
+	  height: 100vh;
+	  width: 100%;
+	}  
+	
+	}
+	 
+	@media screen and (width: 400px) {
+	  
+    main {
+	  height: 100vh;
+	  width: 100%;
+	}
+	 
+	  
+		  
+	}
+	 
