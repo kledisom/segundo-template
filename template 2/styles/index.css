@@ -91,11 +91,7 @@
 	.s-second h3 {
 		color: #212529;
 	}
-	/* .s-second div { */
-		/* border: 2px solid red; */
-		/* height: 50%; */
-	    /* width: 100%; */
-	/* } */
+	
 	.s-second .card {
 	 //display: flex;
 	 //flex-direction: column;
@@ -143,13 +139,79 @@
 	.s-third {
 	 display: flex;
 	 flex-direction: column;
-	 justify-content: space-around;
+	 justify-content: center;
 	 align-items: center;
 		
-	 height: 50vh;
+	 height: 40vh;
 	 width: 100%;
-	 background-color: gray;
+	 background-color: #f5f7f9;
 	}
+	
+	.s-third-content {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 align-items: flex-start;
+		
+	 height: 50%;
+	 width: 80%;
+	}
+	
+   .s-third-content div {
+	 display: flex;
+	 flex-direction: row;
+	 gap: 50px;
+	 
+	 width: 100%;
+	}
+	
+	.s-third-content h2{
+	 font-size: 1.6rem;
+	 font-weight: 200;
+	 color: #6772e5;
+	}
+	
+	.s-third-content p{
+	 font-size: 1.8rem;
+	 font-weight: 400;
+	 color: #32325d;
+	}
+	
+	.s-third-content button {
+	 height: 50px;
+	 width: 180px;
+	 font-size: 1rem;
+	 color: #fff;
+	 background-color: #6772e5;
+	 border: none;
+	 border-radius: 10px;
+	 transition: all 0.5s;
+	 cursor: pointer;
+    }
+	
+	.s-third-content span {
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+	
+	.s-third-content span::after {
+		content: '\00bb';
+		position: absolute;
+		right: 0px;
+		transition: 0.5s;
+	}
+	
+	.s-third-content button:hover span {
+	 padding-right: 20px;
+	}
+	
+	.s-third-content button:hover span:after {
+	 opacity: 1;
+	 right: 0;
+	}
+	
+	
 	
 	 
 	 
