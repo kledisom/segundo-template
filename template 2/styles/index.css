@@ -13,7 +13,7 @@
 	  /*justify-content: center;
 	  align-items: center;*/
 	  
-	  height: 400vh;
+	  height: 300vh;
 	  width: 100%;
 	}
 	 
@@ -72,7 +72,7 @@
     }
 	
 	/*-----------------------------------------------*/
-	
+	/*--------seção 2--------------*/
 	.s-second {
 	 display: flex;
 	 flex-direction: column;
@@ -145,6 +145,8 @@
 	 height: 40vh;
 	 width: 100%;
 	 background-color: #f5f7f9;
+	 border-top: 1px solid rgba(0,0,0,.06);
+	 border-bottom: 1px solid rgba(0,0,0,.06);
 	}
 	
 	.s-third-content {
@@ -198,7 +200,9 @@
 	.s-third-content span::after {
 		content: '\00bb';
 		position: absolute;
-		right: 0px;
+		opacity: 0;
+		top: 0;
+		right: -20px;
 		transition: 0.5s;
 	}
 	
@@ -211,25 +215,213 @@
 	 right: 0;
 	}
 	
+	/*--------seção 4--------------*/
 	
+	.s-fourth {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+		
+	 height: 65vh;
+	 width: 100%;
+	 
+	 color: #8898aa;
+	}
 	
+	 .s-fourth-content {
+		display: grid;
+		justify-content: space-around;
+		grid-template-columns: 200px 200px 200px 200px 200px 200px;
+		gap: 20px;
+		
+		//background-color: #2196F3;
+		//border: 2px solid gold;
+		font-size: 0.9rem;
+		line-height: 30px;
+		
+		height: 100%;
+		width: 100%;
+		margin-top: 100px;
+	 }
 	 
-	 
+	 .logo-template {
+		 display: flex;
+		 justify-content: center;
+	 }
+		
+	 .s-fourth-content p:hover {
+		 font-size: 15px;
+		 cursor: pointer;
+		 color: #6772e5;
+	 }
+	
 	@media screen and (max-width: 900px) {
-	  
+
 	  main {
-	  height: 100vh;
+	  height: 470vh;
 	  width: 100%;
 	}  
+	 .intro-content {	 
+	 font-size: 1.1rem;
+	 line-height: 30px;
+	 text-align: center;
+	 margin-top: 10px;
+	}
+	
+   .s-second h1, .s-second h3 {
+	text-align: center;
+	// margin: 5px;
+	}
+		.grid-container {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.9rem;
+		line-height: 30px;
+	}
+	.s-second {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+		
+	 height: 250vh;
+	 width: 100%;
+	}
+	
+   .s-third {
+	 display:flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+	 align-items: center;
+		
+	 height: 40vh;
+	 width: 100%;
+	 background-color: #f5f7f9;
+	 border-top: 1px solid rgba(0,0,0,.06);
+	 border-bottom: 1px solid rgba(0,0,0,.06);
+	 margin-top: 30px;
+	}
+	
+	.s-third-content div {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 gap: 50px;
+	 
+	 width: 100%;
+	}
+	
+	.s-fourth-content {
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: space-around; */
+		/* grid-template-columns: 200px 200px 200px 200px 200px 200px; */
+		/* gap: 20px; */
+		
+		//background-color: #2196F3;
+		//border: 2px solid gold;
+		font-size: 0.9rem;
+		line-height: 30px;
+		
+		height: 100vh;
+		width: 100%;
+		margin-top: 200px;
+	 }
 	
 	}
 	 
 	@media screen and (width: 400px) {
 	  
     main {
-	  height: 100vh;
+	  height: 700vh;
 	  width: 100%;
+	} 
+	
+	#s-intro header nav {
+		 display: none;
+		 justify-content: space-between;
+		 align-items: center;
+		
+		width: 50%;
 	}
+	
+	#s-intro {
+		 height: 100vh;
+	     width: 100%;
+		 
+		 background-image: url(../img//bg/highways.png);
+		
+	}
+	.intro-content {	 
+	 font-size: 0.9rem;
+	 line-height: 20px;
+	 text-align: center;
+	 margin-top: 40px;
+	}
+	
+   .s-second h1, .s-second h3 {
+	text-align: center;
+	}
+   .grid-container {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.9rem;
+		line-height: 30px;
+	}
+	.s-second {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+		
+	 height: 400vh;
+	 width: 100%;
+	}
+	
+   .s-third {
+	 display:flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+	 align-items: center;
+		
+	 height: 80vh;
+	 width: 100%;
+	 background-color: #f5f7f9;
+	 border-top: 1px solid rgba(0,0,0,.06);
+	 border-bottom: 1px solid rgba(0,0,0,.06);
+	 margin-top: 30px;
+	 text-align: center;
+	 padding: 10px;
+	}
+	
+	.s-third-content div {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 gap: 15px;
+	 
+	 width: 100%;
+	}
+	
+	.s-fourth-content {
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: space-around; */
+		/* grid-template-columns: 200px 200px 200px 200px 200px 200px; */
+		/* gap: 20px; */
+		
+		//background-color: #2196F3;
+		//border: 2px solid gold;
+		font-size: 0.9rem;
+		line-height: 30px;
+		
+		height: 100vh;
+		width: 100%;
+		margin-top: 200px;
+	 }
 	 
 	  
 		  
